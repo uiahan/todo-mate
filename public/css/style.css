@@ -1,0 +1,7 @@
+.text-gray {
+    color: #bfbfbf;
+}
+
+.border-left-danger {
+    border-left: 3px #dc3545 solid;
+}

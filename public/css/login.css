@@ -1,0 +1,11 @@
+.row {
+    height: 100dvh;
+}
+
+.col-8 {
+    background-color: #222;
+}
+
+.col-4 {
+    background-color: #111;
+}
