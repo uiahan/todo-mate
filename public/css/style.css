@@ -5,3 +5,7 @@
 .border-left-danger {
     border-left: 3px #dc3545 solid;
 }
+
+.border-left-success {
+    border-left: 3px #198754 solid;
+}

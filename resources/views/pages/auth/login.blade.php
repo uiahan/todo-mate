@@ -18,20 +18,14 @@
                         <div>
                             <label for="username" class="form-label"><i class="fa-light fa-user"></i> Username</label>
                             <input value="{{ old('username') }}" type="text" class="form-control" name="username" required>
-                            @error('username')
-                                <div class="alert alert-danger border-left-danger mt-3 py-1 px-2 text-sm">{{ $message }}</div>
-                            @enderror
                         </div>
                         <div class="mt-3">
                             <label for="password" class="form-label"><i class="fa-light fa-lock"></i> Password</label>
                             <input type="password" class="form-control" name="password" required>
-                            @error('password')
-                                <div class="alert alert-danger border-left-danger mt-3 py-1 px-2 text-sm">{{ $message }}</div>
-                            @enderror
                         </div>
                         <div class="mt-3 d-flex">
-                            <input type="checkbox" class="form-check">
-                            <small for="checkbox" class="ms-1">Remember Me</small>
+                            <input type="checkbox" class="form-check" name="remember" id="remember">
+                            <small for="remember" class="ms-1">Remember Me</small>
                         </div>
                         <div class="mt-3">
                             <button class="btn mb-1 w-100 btn-warning text-white">Sign In</button>
@@ -47,6 +41,7 @@
             </div>
         </div>
     </div>
+    @include('components.notification')
 @endsection
 @push('js')
     <script>
